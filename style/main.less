@@ -51,6 +51,9 @@
     line-height: 20px;
     letter-spacing: 0.21px;
 }
+label {
+    padding-bottomz: 2px;
+}
 
 /* End of common styles */
 
@@ -104,6 +107,24 @@
     background-color: @booking;
     margin: 5% auto;
     max-width: 984px;
+    ::-webkit-calendar-picker-indicator {
+        color: transparent;
+        opacity: 1;
+        background: url(../img/calendar--3-.png) no-repeat center;
+        background-size: contain;
+    }
+    ::-moz-calendar-picker-indicator {
+        color: transparent;
+        opacity: 1;
+        background: url(../img/calendar--3-.png) no-repeat center;
+        background-size: contain;
+    }
+    calendar-picker-indicator {
+        color: transparent;
+        opacity: 1;
+        background: url(../img/calendar--3-.png) no-repeat center;
+        background-size: contain;
+    }
 }
 .form-group {
     padding: 15px;
