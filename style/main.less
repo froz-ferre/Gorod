@@ -55,6 +55,18 @@ label {
     padding-bottomz: 2px;
 }
 
+select, input {
+    appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type="date"] {
+    -moz-appearance: button;
+}
+
+
 /* End of common styles */
 
 
@@ -113,16 +125,16 @@ label {
         background: url(../img/calendar--3-.png) no-repeat center;
         background-size: contain;
     }
-    ::-moz-calendar-picker-indicator {
+    ::-o-calendar-picker-indicator {
         color: transparent;
         opacity: 1;
         background: url(../img/calendar--3-.png) no-repeat center;
         background-size: contain;
     }
-    calendar-picker-indicator {
-        color: transparent;
-        opacity: 1;
-        background: url(../img/calendar--3-.png) no-repeat center;
+   
+    select {
+        min-width: 70px;
+        background: url(../img/group-3.png) no-repeat right;
         background-size: contain;
     }
 }
@@ -161,9 +173,9 @@ label {
             padding: 25px;
 
             &-desc {
-               display: inline-block;
-           }
-           h1 {
+             display: inline-block;
+         }
+         h1 {
             color: #333333;
             font-family: ". SF NS Display";
             font-size: 25px;
